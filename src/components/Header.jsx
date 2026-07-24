@@ -1,3 +1,5 @@
+import logoIcon from '../assets/logo-icon.png';
+
 const TAPE_ITEMS = [
   { symbol: 'AAPL', change: '+0.8%', direction: 'up' },
   { symbol: 'MSFT', change: '+1.2%', direction: 'up' },
@@ -6,15 +8,15 @@ const TAPE_ITEMS = [
   { symbol: 'AMZN', change: '-0.4%', direction: 'down' },
   { symbol: 'GOOGL', change: '+0.6%', direction: 'up' },
 ];
-// duplicate list
+ // Duplicate the list so the marquee can loop seamlessly.
 function Header() {
   const tapeItems = [...TAPE_ITEMS, ...TAPE_ITEMS];
 
   return (
     <header className="header">
       <h1 className="header__title">
-        <span className="header__title-icon">📈</span>
-        EasyTrack
+        <img src={logoIcon} alt="StockTrack logo" className="header__title-icon" />
+        StockTrack
       </h1>
       <p className="header__desc">
         Explore real-time stock market data. Search any stock symbol to view

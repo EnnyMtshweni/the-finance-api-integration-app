@@ -57,7 +57,9 @@ body {
 }
 
 .header__title-icon {
-  color: var(--gold);
+  height: 1.9rem;
+  width: auto;
+  display: block;
 }
 
 .header__desc {
@@ -68,7 +70,7 @@ body {
   line-height: 1.5;
 }
 
-/* Signature element */
+/* Signature element: a quiet ticker-tape stripe */
 .ticker-tape {
   margin-top: 28px;
   width: 100%;
@@ -282,7 +284,7 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* ---------- Error Message styling ---------- */
+/* ---------- Error Message ---------- */
 .error-message {
   width: 100%;
   max-width: 620px;
