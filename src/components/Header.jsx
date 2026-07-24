@@ -14,7 +14,7 @@ function Header() {
     <header className="header">
       <h1 className="header__title">
         <span className="header__title-icon">📈</span>
-        FinTrack
+        EasyTrack
       </h1>
       <p className="header__desc">
         Explore real-time stock market data. Search any stock symbol to view
